@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vh;
+  width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffff76;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #b0413e;
+  color: white;
+  font-size: 2vmin;
+  padding: 1vmin 2vmin;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 2vmin;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* Winner Overlay */
+#winnerScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  flex-direction: column;
+}
+
+#winnerScreen.active {
+  display: flex;
+}
+
+#winnerMessage {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px #fff;
+}
+
+#winnerText {
+  font-size: 4vmin;
+  color: #b0413e;
+  margin-bottom: 1rem;
+}
+
+.subText {
+  font-size: 2vmin;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#okBtn {
+  padding: 1vmin 3vmin;
+  font-size: 2vmin;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #548687;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.credit {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 1.6vmin;
+  color: white;
+  background-color: #b0413e;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
